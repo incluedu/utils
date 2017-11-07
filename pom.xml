@@ -6,7 +6,7 @@
 
     <groupId>net.lustenauer</groupId>
     <artifactId>utils</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
 
     <properties>
@@ -14,5 +14,55 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Patric Hollenstein</name>
+            <email>patric.hollenstein@lustenauer.net</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/incluedu/utils.git</connection>
+        <developerConnection>scm:git:ssh://github.com/incluedu/utils.git</developerConnection>
+        <url>http://github.com/incluedu/utils.git</url>
+    </scm>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <dependencies>
+        <!--JUnit-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--ControlsFX-->
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>8.40.13</version>
+        </dependency>
+
+    </dependencies>
+
 
 </project>
