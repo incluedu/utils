@@ -45,15 +45,16 @@ public class COL {
     }
 
     /**
-     * returns a list of obsolete elements (elements delete in the updated list) from to lists of same type
+     * returns a collection of obsolete elements. This mean you get a collection (Set, List, ...) witch contains all
+     * the obsolet elements from with was in the original list but not in the updated list.
      *
-     * @param originalList
-     * @param updatedList
-     * @param <E>
-     * @return
+     * @param originalList Original collection with all elements
+     * @param updatedList  Updated collection may have les elements
+     * @param <E>          Type of the collection
+     * @return Collection with contains all elements included in orignal list but not in updated list
      */
-    public static <E> List<E> findObsoleteElements(List<E> originalList, List<E> updatedList) {
-        List<E> obsoleteList = new ArrayList<>();
+    public static <E> Collection<E> findObsoleteElements(Collection<E> originalList, Collection<E> updatedList) {
+        Collection<E> obsoleteList = new ArrayList<>();
         boolean found;
 
         for (E e1 : originalList) {
