@@ -24,9 +24,7 @@
 
 package net.lustenauer.utils.collections;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 public class COL {
 
@@ -45,21 +43,21 @@ public class COL {
     }
 
     /**
-     * returns a collection of obsolete elements. This mean you get a collection (Set, List, ...) witch contains all
+     * Returns a {@link Collection} of obsolete elements. This mean you get a collection (Set, List, ...) witch contains all
      * the obsolet elements from with was in the original list but not in the updated list.
      *
-     * @param originalList Original collection with all elements
-     * @param updatedList  Updated collection may have les elements
-     * @param <E>          Type of the collection
+     * @param original Original collection with all elements
+     * @param updated  Updated collection may have les elements
+     * @param <E>      Type of the collection
      * @return Collection with contains all elements included in orignal list but not in updated list
      */
-    public static <E> Collection<E> findObsoleteElements(Collection<E> originalList, Collection<E> updatedList) {
+    public static <E> Collection<E> findObsoleteElements(Collection<E> original, Collection<E> updated) {
         Collection<E> obsoleteList = new ArrayList<>();
         boolean found;
 
-        for (E e1 : originalList) {
+        for (E e1 : original) {
             found = false;
-            for (E e2 : updatedList) {
+            for (E e2 : updated) {
                 if (e1.equals(e2)) {
                     found = true;
                     break;
@@ -68,6 +66,34 @@ public class COL {
             if (!found) obsoleteList.add(e1);
         }
         return obsoleteList;
+    }
+
+    /**
+     * Returns a {@link List} of obsolete elements. More information you can find at
+     * {@link #findObsoleteElements(Collection, Collection)}
+     *
+     * @param original Original collection with all elements
+     * @param updated  Updated collection may have les elements
+     * @param <E>      Type of the collection
+     * @return Collection with contains all elements included in orignal list but not in updated list
+     * @see #findObsoleteElements(Collection, Collection)
+     */
+    public static <E> List<E> findObsoleteElementsList(Collection<E> original, Collection<E> updated) {
+        return new ArrayList<E>(findObsoleteElements(original, updated));
+    }
+
+    /**
+     * Returns a {@link Set} of obsolete elements. More information you can find at
+     * {@link #findObsoleteElements(Collection, Collection)}
+     *
+     * @param original Original collection with all elements
+     * @param updated  Updated collection may have les elements
+     * @param <E>      Type of the collection
+     * @return Collection with contains all elements included in orignal list but not in updated list
+     * @see #findObsoleteElements(Collection, Collection)
+     */
+    public static <E> Set<E> findObsoleteElementsSet(Collection<E> original, Collection<E> updated) {
+        return new HashSet<E>(findObsoleteElements(original, updated));
     }
 
 }
