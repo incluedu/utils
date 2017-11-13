@@ -64,7 +64,7 @@ public class StatBar {
                 statusBar.getRightItems().setAll(new Glyph("FontAwesome", FontAwesome.Glyph.ANDROID));
                 break;
 
-            case POGRESS:
+            case PROGRESS:
                 statusBar.getRightItems().setAll(new ProgressBar());
                 break;
 
@@ -92,6 +92,6 @@ public class StatBar {
         WARN,
         INFO,
         ANDROID,
-        POGRESS
+        PROGRESS
     }
 }
