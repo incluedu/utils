@@ -24,6 +24,7 @@
 
 package net.lustenauer.utils.jfx.controls.statusbar;
 
+import javafx.scene.control.ProgressBar;
 import org.controlsfx.control.StatusBar;
 import org.controlsfx.glyphfont.FontAwesome;
 import org.controlsfx.glyphfont.Glyph;
@@ -63,6 +64,10 @@ public class StatBar {
                 statusBar.getRightItems().setAll(new Glyph("FontAwesome", FontAwesome.Glyph.ANDROID));
                 break;
 
+            case POGRESS:
+                statusBar.getRightItems().setAll(new ProgressBar());
+                break;
+
             default:
             case NONE:
                 statusBar.getRightItems().clear();
@@ -86,6 +91,7 @@ public class StatBar {
         FAULT,
         WARN,
         INFO,
-        ANDROID
+        ANDROID,
+        POGRESS
     }
 }
