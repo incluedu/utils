@@ -6,6 +6,7 @@
 * adding function *findObsoleteElementsList*   
 * adding function *findObsoleteElementsSet*
 * adding progressbar option to *StatBar*
+* AutoCompleteComboListener change filter from startsWith to contains for better search results.
 
 #### 2017-11-07 Version 1.0.0
 * first release
