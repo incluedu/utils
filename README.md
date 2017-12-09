@@ -2,10 +2,7 @@
 Collection of useful java utils
 
 * [History](https://github.com/incluedu/utils/blob/master/history.md)
-
-Maven Repository
-
-https://mvnrepository.com/artifact/net.lustenauer/utils
+* [Maven Repository](https://mvnrepository.com/artifact/net.lustenauer/utils)
 
 Add to *pom.xml*
 ```
