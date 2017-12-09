@@ -1,5 +1,5 @@
 /*
- * MIT License
+ * The MIT License (MIT)
  *
  * Copyright (c) 2017 Patric Hollenstein
  *
@@ -20,11 +20,14 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
  */
 
 package net.lustenauer.utils.numbers;
 
+/**
+ * @author Patric Hollenstein
+ * @since 1.1.0
+ */
 public class DOUBLE {
 
     /**
@@ -32,6 +35,7 @@ public class DOUBLE {
      *
      * @param value String argument to parse
      * @return The Double value or 0.0 if the string argument is not valid
+     * @since 1.1.0
      */
     public static Double parseDouble(String value) {
         try {

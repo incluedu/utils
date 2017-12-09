@@ -24,15 +24,20 @@
 
 package net.lustenauer.utils.bits;
 
+/**
+ * @author Patric Hollenstein
+ * @since 1.0.0
+ */
 public class Bit {
 
     /**
      * Set a bit in the given byte with the given value
      *
-     * @param _byte
+     * @param _byte source byte
      * @param bitPosition from 0 to 7
      * @param bitValue    true or false
-     * @return
+     * @return byte with the changed bits
+     * @since 1.0.0
      */
     public final static byte setBit(byte _byte, int bitPosition, boolean bitValue) {
         if (bitValue)
@@ -43,9 +48,10 @@ public class Bit {
     /**
      * Get the value off a bit in the given byte
      *
-     * @param _byte
-     * @param bitPosition
-     * @return
+     * @param _byte source byte
+     * @param bitPosition from 0 to 7
+     * @return the value off the requested bit
+     * @since 1.0.0
      */
     public final static Boolean getBit(byte _byte, int bitPosition) {
         return (_byte & (1 << bitPosition)) != 0;

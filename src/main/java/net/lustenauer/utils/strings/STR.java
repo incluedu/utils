@@ -25,11 +25,10 @@
 package net.lustenauer.utils.strings;
 
 /**
- * Created by Patric Hollenstein on 29.10.17.
- * <p>
  * Some String methodes
  *
  * @author Patric Hollenstein
+ * @since 1.0.0
  */
 public class STR {
 
@@ -41,6 +40,8 @@ public class STR {
      * @param start start value from the substring
      * @param end   end value from the substring
      * @return the wanted part of the string or a blank string when the given values out of range
+     * @version 1.0.0
+     * @since 1.0.0
      */
     public static String substr(String value, int start, int end) {
         if (start >= end) return "";

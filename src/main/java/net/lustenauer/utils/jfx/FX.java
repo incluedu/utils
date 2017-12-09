@@ -29,18 +29,18 @@ import javafx.stage.Stage;
 import javafx.stage.Window;
 
 /**
- * Created by Patric Hollenstein on 01.11.17.
  * <p>
  * Contains some helper for javafx
  *
  * @author Patric Hollenstein
+ * @since Version 1.0.0
  */
 public class FX {
 
     /**
      * Helper returns the window from the given node
      *
-     * @param rootPane
+     * @param rootPane Root pane off the Window
      * @return Window of the node
      */
     public static Window win(Pane rootPane) {
@@ -50,7 +50,7 @@ public class FX {
     /**
      * Helper returns the stage from the given node
      *
-     * @param rootPane
+     * @param rootPane Root pane off the Stage
      * @return Stage of the node
      */
     public static Stage stage(Pane rootPane) {

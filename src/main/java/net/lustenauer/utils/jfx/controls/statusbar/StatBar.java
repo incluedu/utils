@@ -29,6 +29,11 @@ import org.controlsfx.control.StatusBar;
 import org.controlsfx.glyphfont.FontAwesome;
 import org.controlsfx.glyphfont.Glyph;
 
+/**
+ * @author Patric Hollenstein
+ * @version 1.1.0
+ * @since 1.0.0
+ */
 public class StatBar {
 
     /**
@@ -37,6 +42,8 @@ public class StatBar {
      * @param statusBar {@link StatusBar} from ControlsFx
      * @param text      text to set
      * @param status    use a status from {@link Status}
+     * @version 1.1.0
+     * @since 1.0.0
      */
     public static void set(StatusBar statusBar, String text, Status status) {
         statusBar.setText(text);
@@ -84,6 +91,9 @@ public class StatBar {
      * <li>Status.WARN</li>
      * <li>Status.INFO</li>
      * </ul>
+     *
+     * @version 1.1.0
+     * @since 1.0.0
      */
     public static enum Status {
         NONE,

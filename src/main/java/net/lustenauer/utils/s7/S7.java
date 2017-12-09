@@ -27,9 +27,8 @@ package net.lustenauer.utils.s7;
 import java.util.Arrays;
 
 /**
- * Created by Patric Hollenstein on 30.10.17.
- *
  * @author Patric Hollenstein
+ * @since 1.0.0
  */
 public class S7 {
 
@@ -38,6 +37,7 @@ public class S7 {
      *
      * @param bytes byte array with the S7 String
      * @return java style string
+     * @since 1.0.0
      */
     public static String s7baToStr(byte[] bytes) {
 

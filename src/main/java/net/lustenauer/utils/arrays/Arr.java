@@ -26,6 +26,9 @@ package net.lustenauer.utils.arrays;
 
 /**
  * Useful array method's
+ *
+ * @author Patric Hollenstein
+ * @since 1.0.0
  */
 public class Arr {
 
@@ -34,6 +37,7 @@ public class Arr {
      *
      * @param value Integer
      * @return Array of bytes
+     * @since 1.0.0
      */
     public static final byte[] intToByteArray(int value) {
         return new byte[]{

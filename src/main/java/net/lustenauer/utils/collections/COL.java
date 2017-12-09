@@ -26,13 +26,21 @@ package net.lustenauer.utils.collections;
 
 import java.util.*;
 
+/**
+ * @author Patric Hollenstein
+ * @version 1.1.0
+ * @since 1.0.0
+ */
 public class COL {
 
     /**
      * Return the toString from all values off the collection as a list of String
      *
      * @param col collection with the data
+     * @param <E> the type of the collection
      * @return a list with all toString values from the collection
+     * @version 1.0.0
+     * @since 1.0.0
      */
     public static <E> List<String> toStringList(Collection<E> col) {
         List<String> list = new ArrayList<>();
@@ -50,6 +58,8 @@ public class COL {
      * @param updated  Updated collection may have les elements
      * @param <E>      Type of the collection
      * @return Collection with contains all elements included in orignal list but not in updated list
+     * @version 1.0.0
+     * @since 1.0.0
      */
     public static <E> Collection<E> findObsoleteElements(Collection<E> original, Collection<E> updated) {
         Collection<E> obsoleteList = new ArrayList<>();
@@ -76,7 +86,9 @@ public class COL {
      * @param updated  Updated collection may have les elements
      * @param <E>      Type of the collection
      * @return Collection with contains all elements included in orignal list but not in updated list
+     * @version 1.1.0
      * @see #findObsoleteElements(Collection, Collection)
+     * @since 1.1.0
      */
     public static <E> List<E> findObsoleteElementsList(Collection<E> original, Collection<E> updated) {
         return new ArrayList<E>(findObsoleteElements(original, updated));
@@ -90,7 +102,9 @@ public class COL {
      * @param updated  Updated collection may have les elements
      * @param <E>      Type of the collection
      * @return Collection with contains all elements included in orignal list but not in updated list
+     * @version 1.1.0
      * @see #findObsoleteElements(Collection, Collection)
+     * @since 1.1.0
      */
     public static <E> Set<E> findObsoleteElementsSet(Collection<E> original, Collection<E> updated) {
         return new HashSet<E>(findObsoleteElements(original, updated));

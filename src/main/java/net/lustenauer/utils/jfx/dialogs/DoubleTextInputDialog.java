@@ -34,12 +34,12 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 
 /**
- * Created by Patric Hollenstein on 28.10.17.
  * <p>
  * Create a dialogs with two text inputs
  * </p>
  *
  * @author Patric Hollenstein
+ * @since Version 1.0.0
  */
 public class DoubleTextInputDialog extends Dialog {
 

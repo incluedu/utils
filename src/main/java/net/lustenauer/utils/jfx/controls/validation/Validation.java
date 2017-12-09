@@ -29,9 +29,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Patric Hollenstein on 01.11.17.
- *
  * @author Patric Hollenstein
+ * @version 1.0.0
+ * @since 1.0.0
  */
 public class Validation {
 
@@ -40,7 +40,10 @@ public class Validation {
 
     /**
      * Add a given validator
-     * @param validator
+     *
+     * @param validator validator to add
+     * @version 1.0.0
+     * @since 1.0.0
      */
     public void addValidator(Validator validator) {
         validators.add(validator);
@@ -61,6 +64,7 @@ public class Validation {
      * check all validators and return false when one of theme is not valid
      *
      * @return false if one validator is not valid
+     * @since 1.0.0
      */
     public boolean isValid() {
         for (Validator v : validators) {
@@ -73,6 +77,7 @@ public class Validation {
      * Give a list with all the messages from validation
      *
      * @return Messages from the validation
+     * @since 1.0.0
      */
     public List<String> getMessages() {
         List<String> messages = new ArrayList<>();

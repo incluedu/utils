@@ -35,6 +35,8 @@ import javafx.scene.input.KeyEvent;
  * Created by Patric Hollenstein on 29.10.17.
  *
  * @author Patric Hollenstein
+ *
+ * @since Version 1.0.0
  */
 public class AutoCompleteComboBoxListener<T> implements EventHandler<KeyEvent> {
 

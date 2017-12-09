@@ -24,6 +24,10 @@
 
 package net.lustenauer.utils.numbers;
 
+/**
+ * @author Patric Hollenstein
+ * @since 1.0.0
+ */
 public class INT {
 
 
@@ -32,6 +36,7 @@ public class INT {
      *
      * @param value String argument to parse
      * @return The Integer value or 0 if the string argument is not valid
+     * @since 1.0.0
      */
     public static Integer parseInt(String value) {
         try {

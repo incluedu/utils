@@ -1,12 +1,15 @@
 # UTILS History
 
-#### 2017-??-?? Version 1.1.0
+#### 2017-12-09 Version 1.1.0
 * adding function *DOUBLE.parseDouble*
-* change function *COL.findObsoleteElements* to handle with Collection now it is possible to use it with List and Set
+* update function *COL.findObsoleteElements* to handle with Collection now it is possible to use it with List and Set
 * adding function *findObsoleteElementsList*   
 * adding function *findObsoleteElementsSet*
 * adding progressbar option to *StatBar*
-* AutoCompleteComboListener change filter from startsWith to contains for better search results.
+* update AutoCompleteComboListener change search filter from *startsWith* to *contains* for better search results.
+* adding function  *ALERT.exceptionDialog* 
+* adding class *EditCell*
+* update javadoc
 
 #### 2017-11-07 Version 1.0.0
 * first release
