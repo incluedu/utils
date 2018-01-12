@@ -1,5 +1,9 @@
 # UTILS History
 
+#### 2018-xx-xx Version 1.2.0
+* adding class strings.Formatter
+* adding method strings.STR.form
+
 #### 2017-12-09 Version 1.1.0
 * adding function *DOUBLE.parseDouble*
 * update function *COL.findObsoleteElements* to handle with Collection now it is possible to use it with List and Set
