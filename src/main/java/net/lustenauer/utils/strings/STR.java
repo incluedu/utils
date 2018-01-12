@@ -105,7 +105,7 @@ public final class STR {
      * For example,
      * <p>
      * <pre>
-     * STR.form(&quot;Hi {}. My name is {} and i am {} years old.&quot;, &quot;Alice&quot;, &quot;Bob&quot, 27;);
+     * STR.form(&quot;Hi {}. My name is {} and i am {} years old.&quot;, &quot;Alice&quot;, &quot;Bob&quot;, 27);
      * </pre>
      * <p>
      * will return the string "Hi Alice. My name is Bob and i am 27 years old.".
