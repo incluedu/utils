@@ -30,8 +30,8 @@ import org.controlsfx.glyphfont.FontAwesome;
 import org.controlsfx.glyphfont.Glyph;
 
 /**
- * @author Patric Hollenstein
- * @version 1.1.0
+ * Helper class for StatusBar in JavaFx
+ *
  * @since 1.0.0
  */
 public class StatBar {
@@ -41,14 +41,13 @@ public class StatBar {
      *
      * @param statusBar {@link StatusBar} from ControlsFx
      * @param text      text to set
-     * @param status    use a status from {@link Status}
-     * @version 1.1.0
+     * @param status    use a status from {@link net.lustenauer.common.Status}
      * @since 1.0.0
      */
-    public static void set(StatusBar statusBar, String text, Status status) {
+    public static void set(StatusBar statusBar, String text, net.lustenauer.common.Status status) {
         statusBar.setText(text);
 
-        if (status == null) status = Status.NONE;
+        if (status == null) status = net.lustenauer.common.Status.NONE;
 
         switch (status) {
             case OK:
@@ -56,6 +55,7 @@ public class StatBar {
                 break;
 
             case FAULT:
+            case ERROR:
                 statusBar.getRightItems().setAll(new Glyph("FontAwesome", FontAwesome.Glyph.EXCLAMATION_CIRCLE));
                 break;
 
@@ -94,7 +94,9 @@ public class StatBar {
      *
      * @version 1.1.0
      * @since 1.0.0
+     * @deprecated 1.2.0 use {@link net.lustenauer.common.Status}
      */
+    @Deprecated
     public static enum Status {
         NONE,
         OK,

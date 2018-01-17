@@ -1,8 +1,11 @@
 # UTILS History
 
 #### 2018-xx-xx Version 1.2.0
-* adding class strings.Formatter
-* adding method strings.STR.form
+* adding class strings.Formatter.
+* adding method strings.STR.form.
+* utils.jfx.statusbar.StatBar.Status is deprecated.
+* adding common.Status enum with contains an active flag for free use. 
+* adding common.Action enum.
 
 #### 2017-12-09 Version 1.1.0
 * adding function *DOUBLE.parseDouble*
