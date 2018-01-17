@@ -4,7 +4,7 @@
 * adding class strings.Formatter.
 * adding method strings.STR.form.
 * utils.jfx.statusbar.StatBar.Status is deprecated.
-* adding common.Status enum with contains an active flag for free use. 
+* adding common.Status enum. 
 * adding common.Action enum.
 
 #### 2017-12-09 Version 1.1.0

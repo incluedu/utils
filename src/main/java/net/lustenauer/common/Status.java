@@ -45,29 +45,5 @@ public enum Status {
     WARN,
     INFO,
     ANDROID,
-    PROGRESS;
-
-    private boolean active;
-
-    /**
-     * Empty Constructor
-     */
-    Status() {
-    }
-
-    /**
-     * Constructor with active flag for free use
-     *
-     * @param active TRUE or FALSE
-     */
-    Status(boolean active) {
-        this.active = active;
-    }
-
-    /**
-     * @return current state off the active flag, this flag is for free use
-     */
-    boolean isActive() {
-        return active;
-    }
+    PROGRESS
 }
