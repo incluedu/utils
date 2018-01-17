@@ -26,7 +26,7 @@
 package net.lustenauer.common;
 
 /**
- * couple off stats for common use
+ * couple of status values for common use
  * <ul>
  * <li>Status.NONE</li>
  * <li>Status.OK</li>
