@@ -6,6 +6,9 @@
 * utils.jfx.statusbar.StatBar.Status is deprecated.
 * adding common.Status enum. 
 * adding common.Action enum.
+* adding utils.collections.ObservableQueue
+* adding utils.jfx.dialogs.AboutDialog
+* adding utils.jfx.common.ENUM
 
 #### 2017-12-09 Version 1.1.0
 * adding function *DOUBLE.parseDouble*
