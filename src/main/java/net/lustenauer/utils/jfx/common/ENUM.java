@@ -1,7 +1,7 @@
 /*
- * MIT License
+ * The MIT License (MIT)
  *
- * Copyright (c) 2017 - 2018 Patric Hollenstein
+ * Copyright (c) 2018 Patric Hollenstein
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,7 +20,6 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
  */
 
 package net.lustenauer.utils.jfx.common;
@@ -54,7 +53,7 @@ public class ENUM {
      * display the deprecated values.
      *
      * @param enumType Enum class to put in list
-     * @param <E>
+     * @param <E>      Generic type
      * @return A list with all not deprecated enum entries from the given enum
      * @throws NoSuchFieldException some errors what could excepted during annotation check
      * @since Version 1.2.0

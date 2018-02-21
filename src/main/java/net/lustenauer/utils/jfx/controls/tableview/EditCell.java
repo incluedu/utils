@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2017 Patric Hollenstein
+ * Copyright (c) 2018 Patric Hollenstein
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -43,8 +43,8 @@ import javafx.util.StringConverter;
  * <p>
  * Class base was https://gist.github.com/james-d/be5bbd6255a4640a5357
  *
- * @param <S>
- * @param <T>
+ * @param <S> The type of the TableView generic type
+ * @param <T> The type of the item contained within the Cell.
  * @author james-d
  * @author Patric Hollenstein
  * @since Version 1.1.0
@@ -120,6 +120,7 @@ public class EditCell<S, T> extends TableCell<S, T> {
     /**
      * Convenience method for creating an EditCell for a String value.
      *
+     * @param <S> Type definition
      * @return the created EditCell
      */
     public static <S> EditCell<S, String> createStringEditCell() {

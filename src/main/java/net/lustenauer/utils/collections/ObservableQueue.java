@@ -1,7 +1,7 @@
 /*
- * MIT License
+ * The MIT License (MIT)
  *
- * Copyright (c) 2017 - 2018 Patric Hollenstein
+ * Copyright (c) 2018 Patric Hollenstein
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,7 +20,6 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
  */
 
 package net.lustenauer.utils.collections;
@@ -34,7 +33,7 @@ import java.util.Queue;
 /**
  * Found class @https://stackoverflow.com/questions/28449809/why-are-there-no-observablequeues-in-javafx/28468340
  *
- * @param <E>
+ * @param <E> Generic type param
  * @since Version 1.2.0
  */
 public class ObservableQueue<E> extends ObservableListBase<E> implements Queue<E> {
@@ -47,7 +46,7 @@ public class ObservableQueue<E> extends ObservableListBase<E> implements Queue<E
      * Note that manipulations of the underlying queue will not result
      * in notification to listeners.
      *
-     * @param queue
+     * @param queue {@link Queue}
      * @since Version 1.2.0
      */
     public ObservableQueue(Queue<E> queue) {
