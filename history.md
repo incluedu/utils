@@ -1,6 +1,6 @@
 # UTILS History
 
-#### 2018-xx-xx Version 1.2.0
+#### 2018-02-21 Version 1.2.0
 * adding class strings.Formatter.
 * adding method strings.STR.form.
 * utils.jfx.statusbar.StatBar.Status is deprecated.
