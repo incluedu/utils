@@ -1,5 +1,8 @@
 # UTILS History
 
+#### 2018-xx-xx Version 1.3.0
+* adding utils.System.Sys.getSystemUptime
+
 #### 2018-02-21 Version 1.2.0
 * adding class strings.Formatter.
 * adding method strings.STR.form.
