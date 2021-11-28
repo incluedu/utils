@@ -1,7 +1,9 @@
 # UTILS History
 
-#### 2018-xx-xx Version 1.3.0
-* adding utils.System.Sys.getSystemUptime
+#### 2021-11-28 Version 1.3.0.SNAPSHOT
+* upgrade controlsfx to 9.40.18
+* upgrade junit to 4.13.2
+* change build system from maven to gradle
 
 #### 2018-02-21 Version 1.2.0
 * adding class strings.Formatter.

@@ -61,7 +61,6 @@ public final class STR {
      * Performs single argument substitution for the 'pattern' passed as parameter.
      * <p>
      * For example,
-     * <p>
      * <pre>
      * STR.form(&quot;Hi {}.&quot;, &quot;there&quot;);
      * </pre>
@@ -82,7 +81,6 @@ public final class STR {
      * Performs a two argument substitution for the 'pattern' passed as parameter.
      * <p>
      * For example,
-     * <p>
      * <pre>
      * STR.form(&quot;Hi {}. My name is {}.&quot;, &quot;Alice&quot;, &quot;Bob&quot;);
      * </pre>
@@ -103,7 +101,6 @@ public final class STR {
      * Performs a multiple argument substitution for the 'pattern' passed as parameter.
      * <p>
      * For example,
-     * <p>
      * <pre>
      * STR.form(&quot;Hi {}. My name is {} and i am {} years old.&quot;, &quot;Alice&quot;, &quot;Bob&quot;, 27);
      * </pre>
